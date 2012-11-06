@@ -1,0 +1,33 @@
+{
+  "name": "condense",
+  "id": "condense",
+  "version": "0.0.1",
+  "description": "Utility for condensing rest arguments",
+  "keywords": [ "condense" ],
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+  "homepage": "https://github.com/Gozala/condense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gozala/condense.git",
+    "web": "https://github.com/Gozala/condense"
+  },
+  "bugs": {
+    "url": "http://github.com/Gozala/condense/issues/"
+  },
+  "devDependencies": {
+    "test": "~0.x.0",
+    "phantomify": "~0.x.0",
+    "repl-utils": "~1.0.0"
+  },
+  "main": "./condense.js",
+  "scripts": {
+    "repl": "node node_modules/repl-utils",
+    "test": "npm run test-node && npm run test-browser",
+    "test-browser": "node ./node_modules/phantomify/bin/cmd.js ./test/index.js",
+    "test-node": "node ./test/index.js"
+  },
+  "licenses": [{
+    "type" : "MIT",
+    "url" : "https://github.com/Gozala/condense/License.md"
+  }]
+}
